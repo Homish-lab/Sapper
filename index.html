@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<title>Minesweeper</title>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/dark.css" id="theme-link">
+    <link rel="stylesheet" href="css/minesweeperstyle.css" type="text/css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="theme-button" id="theme-button">Поменять тему</div>
+        <header class="header">
+            <div class="header__content">
+                <h1 align="center">Сапёр</h1>
+            </div>
+            <main class="style">
+                <article class="style__content">
+                </article>
+            </main>
+    </div>
+</body>
+
+
+<body>
+    <div class="col-left">
+        <div class="settings">
+            <label for="boardSize">Размер поля:</label>
+            <input id="boardSize" type="range" value="10" min="4" max="20">
+            <!--	
+			    <label for="tileSize">tile size</label>
+			    <input id="tileSize" type="range" min="10" max="100" step="10">	
+		    -->
+            <fieldset>
+                <input type="radio" id="easy" name="difficulty" value="0.1" class="difficulty">
+                <label for="easy">Легко</label>
+                <input type="radio" id="normal" name="difficulty" value="0.2" class="difficulty" checked>
+                <label for="normal">Нормально</label>
+                <input type="radio" id="hard" name="difficulty" value="0.4" class="difficulty">
+                <label for="hard">Сложно</label>
+            </fieldset>
+        </div>
+    </div>
+</body>
+
+<body>
+
+    <div class="col-right">
+        <a href="#!" class="minesweeper-btn">Новая игра</a>
+    </div>
+    <div class="board-wrap">
+        <div class="board"></div>
+    </div>
+    <div class="endscreen"></div>
+    <script src="js/game.js"></script>
+    <script src='themes.js'></script>
+    <script src='js/chats.js'></script>
+</body>
+
+</body>
+    <div id="music">
+        <audio id="clearsound" src="sound/pop.mp3" preload="auto"></audio>
+        <audio id="boomsound" src="sound/boom.mp3" preload="auto"></audio>
+        <audio id="winsound" src="sound/win.mp3" preload="auto"></audio>
+        <audio autoplay loop>
+        <source src="sound/music.mp3" type="audio/mp3; codecs=vorbis" preload="auto">
+        <small>Извините, тег audio не поддерживается вашим браузером</small>
+</audio>
+    </div>
+<body>
+
+</html>
